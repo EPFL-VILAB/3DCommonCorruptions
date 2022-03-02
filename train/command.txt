@@ -1,0 +1,1 @@
+python train_normal.py --gpus 1 --val_check_interval 3000 --limit_val_batches 100 --max_epochs 800 --precision 32 --lr 1e-5 --lr_step 1000 --batch_size 8 --image_size 384 --num_workers 32 --experiment_name omnidata-normal-lr_1e5-batchsize_8-size_384-dpt_hybrid-aug

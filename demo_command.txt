@@ -1,0 +1,3 @@
+python demo.py --task $TASKNAME --img_path $PATH_TO_IMAGE_OR_FOLDER --output_path $PATH_TO_SAVE_OUTPUT
+
+python demo.py --task normal --img_path ./sample_data/demo_in/ --output_path ./sample_data/demo_out/

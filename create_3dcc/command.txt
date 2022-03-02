@@ -1,0 +1,5 @@
+python create_3dcc.py --path_rgb '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/rgb' --path_depth '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/depth' --path_reshade '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/reshade' --path_relighting '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/relighting' --path_target '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/rgb_3dcc' --batch_size 50
+
+
+## Demo 
+python create_3dcc_demo.py --path_source '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data' --path_target '/datasets/home/oguzhan/release_3dcc/release_final/3DCommonCorruptions/sample_data/rgb_3dcc' --batch_size 50
