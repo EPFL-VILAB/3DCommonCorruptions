@@ -241,7 +241,7 @@ If you find the code, models, or data useful, please cite this paper:
 @article{kar20223dcc,
   title={3D Common Corruptions and Data Augmentation},
   author={Kar, O\u{g}uzhan Fatih and Yeo, Teresa and Atanov, Andrei and Zamir, Amir},
-  journal={CVPR},
+  journal={arXiv preprint arXiv:2203.01441},
   year={2022}
 }
 ```
