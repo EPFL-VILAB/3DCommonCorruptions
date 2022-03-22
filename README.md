@@ -188,7 +188,7 @@ We provide a docker that contains the code and all the necessary libraries. It's
 1. Simply run:
 
 ```bash
-docker run --runtime=nvidia -ti --rm ofkar/3dcc:latest [coming soon]
+docker run --runtime=nvidia -ti --rm ofkar/3dcc:latest
 ```
 The code is now available in the docker under your home directory (`/3DCommonCorruptions`), and all the necessary libraries should already be installed in the docker.
 
@@ -230,8 +230,7 @@ We recommend using precomputed depth and lighting (e.g. reshading) images when a
 
 ## 3DCC Data 
 
-[Links coming soon!]
-
+3DCC data can be accessed from [here](https://datasets.epfl.ch/3dcc/index.html).
 
 ## Citation
 
