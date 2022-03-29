@@ -1,8 +1,9 @@
-# 3D Common Corruptions and Data Augmentation [CVPR 2022]
+# 3D Common Corruptions and Data Augmentation [CVPR 2022, Oral]
 
 This repository contains tools for benchmarking and training computer vision models using 3D Common Corruptions (3DCC):
 
 - [Demo code](#quickstart-for-generating-3dcc)
+- [Live demo](https://3dcommoncorruptions.epfl.ch/#livedemo) [**\*New Models\***, 29/03/2022]
 - [Generating corruptions](#details-on-generating-individual-corruptions)
 - [Training scripts](#training-with-3d-data-augmentation)
 - [Pretrained models](#pretrained-models)
