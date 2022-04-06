@@ -233,6 +233,10 @@ We recommend using precomputed depth and lighting (e.g. reshading) images when a
 
 3DCC data can be accessed from [here](https://datasets.epfl.ch/3dcc/index.html).
 
+## License
+
+This project is under the CC-BY-NC 4.0 license. See [LICENSE](https://github.com/EPFL-VILAB/3DCommonCorruptions/blob/main/LICENSE) for details.
+
 ## Citation
 
 If you find the code, models, or data useful, please cite this paper:
