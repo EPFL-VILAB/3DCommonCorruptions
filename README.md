@@ -233,6 +233,12 @@ We recommend using precomputed depth and lighting (e.g. reshading) images when a
 
 3DCC data can be accessed from [here](https://datasets.epfl.ch/3dcc/index.html).
 
+To download ImageNet-3DCC, simply run
+```bash
+sh ./tools/download_imagenet_3dcc.sh
+```
+The images will be saved to `./ImageNet-3DCC` folder.
+
 ## License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](https://github.com/EPFL-VILAB/3DCommonCorruptions/blob/main/LICENSE) for details.
