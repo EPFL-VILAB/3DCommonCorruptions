@@ -189,9 +189,9 @@ We provide a docker that contains the code and all the necessary libraries. It's
 1. Simply run:
 
 ```bash
-docker run --runtime=nvidia -ti --rm ofkar/3dcc:latest
+docker run --runtime=nvidia -ti --rm andrewatanov/3dcc:latest
 ```
-The code is now available in the docker under your home directory (`/3DCommonCorruptions`), and all the necessary libraries should already be installed in the docker.
+The code is available in the docker under the `/3DCommonCorruptions/` directory, and all the necessary libraries should already be installed in the docker (you might need to update pytorch if you use A100).
 
 #### Installation via Pip/Conda/Virtualenv
 The code can also be run using a Python environment manager such as Conda. See [requirements.txt](./tools/requirements.txt) for complete list of packages. We recommend doing a clean installation of requirements using virtualenv:
