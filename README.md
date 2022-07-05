@@ -3,10 +3,10 @@
 This repository contains tools for benchmarking and training computer vision models using 3D Common Corruptions (3DCC):
 
 - [Demo code](#quickstart-for-generating-3dcc)
-- [Live demo](https://3dcommoncorruptions.epfl.ch/#livedemo) [**\*New Models\***, 29/03/2022]
+- [Live demo](https://3dcommoncorruptions.epfl.ch/#livedemo) 
 - [Generating corruptions](#details-on-generating-individual-corruptions)
 - [Training scripts](#training-with-3d-data-augmentation)
-- [Pretrained models](#pretrained-models)
+- [Pretrained models](#pretrained-models) [**\*Version 2 Models (stronger than V1)\***]
 - [Data](#3dcc-data)
 - [ImageNet-3DCC & COCO-3DCC](#extending-3dcc-to-other-datasets)
 - [Docker and installation instructions](#installation)
@@ -165,11 +165,21 @@ If you want to train (or finetune) models using 3D data augmentation, see [train
 
 ## Pretrained models
 
+#### (**\*New\***) Download the version 2 models
+You can download our latest pretrained depth and surface normal models [here](https://docs.omnidata.vision/pretrained.html#Pretrained-Models). 
+For a live demo of these models on user uploaded images, please visit [here](https://omnidata.vision/demo/).
+
+In case you use these pretrained models please cite the following papers:
+
+* [3D Common Corruptions and Data Augmentation](https://github.com/EPFL-VILAB/3DCommonCorruptions#citation)
+* [Omnidata: A Scalable Pipeline for Making Multi-Task Mid-Level Vision Datasets From 3D Scans](https://github.com/EPFL-VILAB/omnidata/tree/main/omnidata_tools/torch#citation)
+
+
 #### Network Architecture
 All networks are based on the [UNet](https://arxiv.org/pdf/1505.04597.pdf) and [DPT](https://arxiv.org/abs/2103.13413) architectures and trained on [Taskonomy](https://openaccess.thecvf.com/content_cvpr_2018/html/Zamir_Taskonomy_Disentangling_Task_CVPR_2018_paper.html) and [Omnidata](https://openaccess.thecvf.com/content/ICCV2021/html/Eftekhar_Omnidata_A_Scalable_Pipeline_for_Making_Multi-Task_Mid-Level_Vision_Datasets_ICCV_2021_paper.html) datasets. Please see the paper for additional training details. Architectures for the models are given [here](https://github.com/ofkar/3DCommonCorruptions/tree/main/models).
 
 
-#### Download the models
+#### Download the version 1 models
 The following command downloads the pretrained models.
 ```bash
 sh ./tools/download_models.sh
@@ -248,10 +258,11 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](https://github.com
 If you find the code, models, or data useful, please cite this paper:
 
 ```
-@article{kar20223dcc,
+@inproceedings{kar20223d,
   title={3D Common Corruptions and Data Augmentation},
-  author={Kar, O\u{g}uzhan Fatih and Yeo, Teresa and Atanov, Andrei and Zamir, Amir},
-  journal={CVPR},
+  author={Kar, O{\u{g}}uzhan Fatih and Yeo, Teresa and Atanov, Andrei and Zamir, Amir},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18963--18974},
   year={2022}
 }
 ```
