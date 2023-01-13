@@ -140,6 +140,8 @@ sh ./tools/download_models.sh
 
 This downloads the UNet and DPT models trained on Taskonomy (T+UNet and T+DPT) and DPT models trained on Omnidata with and without 3D data augmentation (O+DPT and Ours) for surface normals prediction task to a folder called `./models/pretrained_models_3dcc`. Individual models can be downloaded [here](https://drive.switch.ch/index.php/s/GB1vhCT1ujgjxks).
 
+See [below](#pretrained-models) for details on version 2 pretrained models.
+
 #### Run a model on your own (clean) image
 
 To run the pretrained models on a set of sample images:
@@ -161,7 +163,6 @@ Input      |T+UNet                     |T+DPT                             |O+DPT
 ![](./assets/fog_5.png)  |  ![](./assets/fog_5_normal_tasko_unet.png)|  ![](./assets/fog_5_normal_tasko_dpt.png) |  ![](./assets/fog_5_normal_omni_dpt.png) |  ![](./assets/fog_5_normal_omni_dpt_2d3daug.png)
 
 If you want to train (or finetune) models using 3D data augmentation, see [training](#training-with-3d-data-augmentation) for instructions.
-
 
 ## Pretrained models
 
@@ -215,9 +216,9 @@ cd 3DCommonCorruptions
 ```bash
 conda create -n testenv -y python=3.6
 source activate testenv
-pip install -r tools/requirements.txt
+pip install -r tools/requirements.txt # installing cupy may take some time
 apt-get update && apt-get -y install libmagickwand-dev && apt-get -y install libgl1-mesa-glx
-apt install ffmpeg
+apt -y install ffmpeg
 ```
 
 
